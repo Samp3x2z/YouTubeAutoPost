@@ -2,6 +2,8 @@
 
 A WinUI 3 application that syncs a local video folder to the currently connected YouTube channel.
 
+<img width="526" height="568" alt="image" src="https://github.com/user-attachments/assets/3831b8e1-a3fd-494e-816f-d5bfe485088b" />
+
 ## First-time setup
 
 ### 1. Create a Google Cloud project
