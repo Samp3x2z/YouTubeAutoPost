@@ -1,0 +1,200 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TIANLI0/FluentSetup/main/shared/schemas/fluentsetup.project.schema.json",
+  "schemaVersion": 1,
+  "variables": {},
+  "app": {
+    "id": "Samp3.YouTubeAutoPost",
+    "name": "YouTubeAutoPost",
+    "publisher": "Samp3",
+    "version": "1.0.0",
+    "description": "Synchronize a folder of videos to the connected YouTube channel.",
+    "website": "https://github.com/Samp3x2z/YouTubeAutoPost",
+    "supportUrl": "https://ko-fi.com/samp3",
+    "releaseNotesUrl": "",
+    "links": [],
+    "icon": "..\\assets\\icon.ico",
+    "mainExecutable": "YouTubeAutoPost.exe",
+    "appUserModelId": "",
+    "toastActivatorClsid": ""
+  },
+  "files": {
+    "source": "..\\artifacts\\YouTubeAutoPost",
+    "include": [
+      "**/*"
+    ],
+    "exclude": [
+      "**/*.pdb",
+      "**/*.ilk",
+      "**/*.obj",
+      "**/.git/**",
+      "**/Thumbs.db",
+      "**/.DS_Store"
+    ],
+    "preserve": [],
+    "extra": [],
+    "emptyDirectories": [],
+    "variants": [],
+    "variantSelection": "user"
+  },
+  "install": {
+    "scope": "user",
+    "defaultScope": "user",
+    "userDir": "C:\\Program Files\\{AppName}",
+    "machineDir": "{ProgramFiles}\\{AppName}",
+    "allowCustomDir": true,
+    "desktopShortcut": "optionalOn",
+    "startMenuShortcut": "optionalOn",
+    "launchAfterInstall": "optionalOn",
+    "allowDowngrade": false,
+    "minWindowsBuild": 19041,
+    "closeProcesses": [
+      "YouTubeAutoPost.exe"
+    ],
+    "adoptExistingInstall": false,
+    "legacyUninstallKeys": [],
+    "closeCommand": null,
+    "relaunchArguments": [],
+    "startMenuFolder": "",
+    "addToPath": [],
+    "ngen": [],
+    "cleanup": {
+      "removeScheduledTasks": [],
+      "removeRunValues": [],
+      "removeShortcuts": [],
+      "removeUninstallKeys": [],
+      "removeFiles": []
+    },
+    "appPaths": false,
+    "restartManager": "auto",
+    "lockedFiles": "fail"
+  },
+  "ui": {
+    "title": "",
+    "welcomeText": "",
+    "finishText": "",
+    "theme": "system",
+    "backdrop": "mica",
+    "useSystemAccent": true,
+    "accentColor": "",
+    "license": "..\\LICENSE.txt",
+    "licenses": {},
+    "licenseMode": "firstInstall",
+    "licenseStyle": "page",
+    "localization": "",
+    "defaultLanguage": "auto",
+    "strings": {},
+    "banner": ""
+  },
+  "output": {
+    "directory": ".",
+    "fileName": "{AppName}-{Version}-Setup.exe",
+    "architecture": "x64",
+    "compression": "fast",
+    "variants": [],
+    "includeWinUI": true,
+    "codeFilter": true
+  },
+  "signing": {
+    "enabled": false,
+    "provider": "signtool",
+    "certificateThumbprint": "",
+    "certificateFile": "",
+    "passwordEnvironmentVariable": "",
+    "timestampUrl": "http://timestamp.digicert.com",
+    "signToolPath": "",
+    "signUninstaller": true,
+    "files": [],
+    "trustedSigning": null,
+    "command": null
+  },
+  "requirements": {
+    "netFramework": "",
+    "netFrameworkSetup": null,
+    "webView2": {
+      "required": false,
+      "minVersion": "",
+      "variants": [],
+      "auto": "",
+      "installer": "",
+      "arguments": [
+        "/silent",
+        "/install"
+      ],
+      "download": null,
+      "helpUrl": "",
+      "onFailure": "warn"
+    },
+    "dotNet": [],
+    "windowsAppRuntime": {
+      "required": false,
+      "version": "",
+      "variants": [],
+      "auto": "",
+      "installer": "",
+      "arguments": [
+        "--quiet"
+      ],
+      "download": null,
+      "helpUrl": "",
+      "onFailure": "warn"
+    },
+    "vcRedist": {
+      "required": true,
+      "minVersion": "",
+      "architecture": "",
+      "variants": [],
+      "auto": "download",
+      "installer": "",
+      "arguments": [
+        "/install",
+        "/quiet",
+        "/norestart"
+      ],
+      "download": null,
+      "helpUrl": "",
+      "onFailure": "warn"
+    },
+    "custom": []
+  },
+  "options": [],
+  "actions": [],
+  "uninstall": {
+    "removeData": [],
+    "removeScheduledTasks": [],
+    "removeRunValues": [],
+    "removeShortcuts": [],
+    "removeRegistryKeys": [],
+    "userData": {
+      "paths": [
+        "{LocalAppData}\\Local\\YouTubeAutoPost"
+      ],
+      "default": true
+    },
+    "elevated": {
+      "ifExists": [],
+      "traceSessions": [],
+      "scheduledTasks": [],
+      "serviceAccess": [],
+      "removeData": [],
+      "removeRegistryKeys": []
+    }
+  },
+  "update": {
+    "github": "",
+    "feed": "",
+    "asset": "",
+    "prerelease": false,
+    "checksums": "",
+    "signer": "",
+    "differential": false
+  },
+  "shortcuts": [],
+  "associations": [],
+  "protocols": [],
+  "registry": [],
+  "environment": [],
+  "services": [],
+  "firewall": [],
+  "inputs": [],
+  "configFiles": []
+}
